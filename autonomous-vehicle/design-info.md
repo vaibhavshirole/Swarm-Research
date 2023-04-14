@@ -1,8 +1,5 @@
 # Getting the car to move
 
-## Task (delete later)
-While we are checking the options for the image processing hw/sw, could you please take a look at how to make the vehicle move? The microcontroller should be connected to a drive motor board commanding the wheels. How do we make the vehicle steer?  Can you come up with a first idea for a design that includes the microcontroller, the drive board, the chassis (to be 3D printed), wheels and motors? In the near future we would like to buy and assemble all these things together. 
-
 ## Questions
 * Budget?
 * Powering 4 or 2 wheels?
