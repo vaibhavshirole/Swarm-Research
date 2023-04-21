@@ -1,0 +1,20 @@
+Determining if the C compiler works failed with the following output:
+Change Dir: /Users/vaibhav/Developer/projects/Swarm-Research/autonomous-vehicle/playground/.pio/build/esp32dev/bootloader/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Users/vaibhav/.platformio/packages/tool-ninja/ninja cmTC_4c49c && [1/2] Building C object CMakeFiles/cmTC_4c49c.dir/testCCompiler.c.obj
+[2/2] Linking C executable cmTC_4c49c
+FAILED: cmTC_4c49c 
+: && /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/xtensa-esp32-elf-gcc -mlongcalls -Wno-frame-address   CMakeFiles/cmTC_4c49c.dir/testCCompiler.c.obj  -o cmTC_4c49c   && :
+/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/bin/ld: cannot find CMakeFiles/cmTC_4c49c.dir/testCCompiler.c.obj: No such file or directory
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the include file stdint.h exists failed with the following output:
+Change Dir: /Users/vaibhav/Developer/projects/Swarm-Research/autonomous-vehicle/playground/.pio/build/esp32dev/bootloader/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Users/vaibhav/.platformio/packages/tool-ninja/ninja cmTC_f4f11 && ninja: error: loading 'build.ninja': No such file or directory
+
+
+

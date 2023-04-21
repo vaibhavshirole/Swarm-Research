@@ -1,0 +1,846 @@
+The target system is: Generic -  - 
+The host system is: Darwin - 22.1.0 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/xtensa-esp32-elf-gcc 
+Build flags: -mlongcalls;-Wno-frame-address;
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/Users/vaibhav/Developer/projects/Swarm-Research/autonomous-vehicle/playground/.pio/build/esp32dev/CMakeFiles/3.16.4/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/xtensa-esp32-elf-g++ 
+Build flags: -mlongcalls;-Wno-frame-address;
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/Users/vaibhav/Developer/projects/Swarm-Research/autonomous-vehicle/playground/.pio/build/esp32dev/CMakeFiles/3.16.4/CompilerIdCXX/a.out"
+
+Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+xtensa-esp32-elf-gcc (crosstool-NG esp-2022r1) 11.2.0
+Copyright (C) 2021 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /Users/vaibhav/Developer/projects/Swarm-Research/autonomous-vehicle/playground/.pio/build/esp32dev/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Users/vaibhav/.platformio/packages/tool-ninja/ninja cmTC_0e9d9 && [1/2] Building C object CMakeFiles/cmTC_0e9d9.dir/testCCompiler.c.obj
+[2/2] Linking C executable cmTC_0e9d9
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /Users/vaibhav/Developer/projects/Swarm-Research/autonomous-vehicle/playground/.pio/build/esp32dev/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Users/vaibhav/.platformio/packages/tool-ninja/ninja cmTC_16980 && [1/2] Building C object CMakeFiles/cmTC_16980.dir/CMakeCCompilerABI.c.obj
+Using built-in specs.
+COLLECT_GCC=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/xtensa-esp32-elf-gcc
+Target: xtensa-esp32-elf
+Configured with: /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/src/gcc/configure --build=aarch64-build_apple-darwin21.4.0 --host=aarch64-build_apple-darwin21.4.0 --target=xtensa-esp32-elf --prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-mpfr=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-mpc=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-isl=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_16980.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_16980.dir/'
+ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/cc1 -quiet -v -iprefix /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/ /Users/vaibhav/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_16980.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlongcalls -Wno-frame-address -version -o /var/folders/52/14hdcd_d3451gmf6wbwp_lsc0000gn/T//cczi85d1.s
+GNU C17 (crosstool-NG esp-2022r1) version 11.2.0 (xtensa-esp32-elf)
+	compiled by GNU C version Apple LLVM 13.0.0 (clang-1300.0.27.3), GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/../../lib/gcc/xtensa-esp32-elf/11.2.0/include"
+ignoring duplicate directory "/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/../../lib/gcc/xtensa-esp32-elf/11.2.0/include-fixed"
+ignoring duplicate directory "/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/../../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/sys-include"
+ignoring duplicate directory "/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/../../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/include
+ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/include-fixed
+ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/sys-include
+ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include
+End of search list.
+GNU C17 (crosstool-NG esp-2022r1) version 11.2.0 (xtensa-esp32-elf)
+	compiled by GNU C version Apple LLVM 13.0.0 (clang-1300.0.27.3), GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 416736c96ebb5802820cc8aed8b76115
+COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_16980.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_16980.dir/'
+ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/bin/as --traditional-format --longcalls -o CMakeFiles/cmTC_16980.dir/CMakeCCompilerABI.c.obj /var/folders/52/14hdcd_d3451gmf6wbwp_lsc0000gn/T//cczi85d1.s
+COMPILER_PATH=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/bin/
+LIBRARY_PATH=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib/
+COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_16980.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_16980.dir/CMakeCCompilerABI.c.'
+[2/2] Linking C executable cmTC_16980
+Using built-in specs.
+COLLECT_GCC=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/xtensa-esp32-elf-gcc
+COLLECT_LTO_WRAPPER=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/lto-wrapper
+Target: xtensa-esp32-elf
+Configured with: /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/src/gcc/configure --build=aarch64-build_apple-darwin21.4.0 --host=aarch64-build_apple-darwin21.4.0 --target=xtensa-esp32-elf --prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-mpfr=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-mpc=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-isl=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+COMPILER_PATH=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/bin/
+LIBRARY_PATH=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib/
+COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_16980' '-dumpdir' 'cmTC_16980.'
+ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/collect2 -plugin /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/liblto_plugin.so -plugin-opt=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/52/14hdcd_d3451gmf6wbwp_lsc0000gn/T//ccxAX9SF.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -o cmTC_16980 /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib/crt0.o /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crti.o /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crtbegin.o -L/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0 -L/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc -L/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib CMakeFiles/cmTC_16980.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lnosys -lc -lgcc /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crtend.o /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crtn.o
+COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_16980' '-dumpdir' 'cmTC_16980.'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/include]
+    add: [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/include-fixed]
+    add: [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/sys-include]
+    add: [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include]
+  end of search list found
+  collapse include dir [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/include] ==> [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/lib/gcc/xtensa-esp32-elf/11.2.0/include]
+  collapse include dir [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/include-fixed] ==> [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/lib/gcc/xtensa-esp32-elf/11.2.0/include-fixed]
+  collapse include dir [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/sys-include] ==> [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/xtensa-esp32-elf/sys-include]
+  collapse include dir [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include] ==> [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/xtensa-esp32-elf/include]
+  implicit include dirs: [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/lib/gcc/xtensa-esp32-elf/11.2.0/include;/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/lib/gcc/xtensa-esp32-elf/11.2.0/include-fixed;/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/xtensa-esp32-elf/sys-include;/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/xtensa-esp32-elf/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(xtensa-esp32-elf-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/vaibhav/Developer/projects/Swarm-Research/autonomous-vehicle/playground/.pio/build/esp32dev/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/Users/vaibhav/.platformio/packages/tool-ninja/ninja cmTC_16980 && [1/2] Building C object CMakeFiles/cmTC_16980.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/xtensa-esp32-elf-gcc]
+  ignore line: [Target: xtensa-esp32-elf]
+  ignore line: [Configured with: /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/src/gcc/configure --build=aarch64-build_apple-darwin21.4.0 --host=aarch64-build_apple-darwin21.4.0 --target=xtensa-esp32-elf --prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-mpfr=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-mpc=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-isl=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 11.2.0 (crosstool-NG esp-2022r1) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_16980.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_16980.dir/']
+  ignore line: [ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/cc1 -quiet -v -iprefix /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/ /Users/vaibhav/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_16980.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlongcalls -Wno-frame-address -version -o /var/folders/52/14hdcd_d3451gmf6wbwp_lsc0000gn/T//cczi85d1.s]
+  ignore line: [GNU C17 (crosstool-NG esp-2022r1) version 11.2.0 (xtensa-esp32-elf)]
+  ignore line: [	compiled by GNU C version Apple LLVM 13.0.0 (clang-1300.0.27.3)  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/../../lib/gcc/xtensa-esp32-elf/11.2.0/include"]
+  ignore line: [ignoring duplicate directory "/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/../../lib/gcc/xtensa-esp32-elf/11.2.0/include-fixed"]
+  ignore line: [ignoring duplicate directory "/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/../../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/sys-include"]
+  ignore line: [ignoring duplicate directory "/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/../../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/include]
+  ignore line: [ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/include-fixed]
+  ignore line: [ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/sys-include]
+  ignore line: [ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (crosstool-NG esp-2022r1) version 11.2.0 (xtensa-esp32-elf)]
+  ignore line: [	compiled by GNU C version Apple LLVM 13.0.0 (clang-1300.0.27.3)  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 416736c96ebb5802820cc8aed8b76115]
+  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_16980.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_16980.dir/']
+  ignore line: [ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/bin/as --traditional-format --longcalls -o CMakeFiles/cmTC_16980.dir/CMakeCCompilerABI.c.obj /var/folders/52/14hdcd_d3451gmf6wbwp_lsc0000gn/T//cczi85d1.s]
+  ignore line: [COMPILER_PATH=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/bin/]
+  ignore line: [LIBRARY_PATH=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_16980.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_16980.dir/CMakeCCompilerABI.c.']
+  ignore line: [[2/2] Linking C executable cmTC_16980]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/xtensa-esp32-elf-gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/lto-wrapper]
+  ignore line: [Target: xtensa-esp32-elf]
+  ignore line: [Configured with: /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/src/gcc/configure --build=aarch64-build_apple-darwin21.4.0 --host=aarch64-build_apple-darwin21.4.0 --target=xtensa-esp32-elf --prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-mpfr=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-mpc=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-isl=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 11.2.0 (crosstool-NG esp-2022r1) ]
+  ignore line: [COMPILER_PATH=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/bin/]
+  ignore line: [LIBRARY_PATH=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_16980' '-dumpdir' 'cmTC_16980.']
+  link line: [ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/collect2 -plugin /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/liblto_plugin.so -plugin-opt=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/52/14hdcd_d3451gmf6wbwp_lsc0000gn/T//ccxAX9SF.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -o cmTC_16980 /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib/crt0.o /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crti.o /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crtbegin.o -L/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0 -L/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc -L/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib CMakeFiles/cmTC_16980.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lnosys -lc -lgcc /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crtend.o /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crtn.o]
+    arg [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/var/folders/52/14hdcd_d3451gmf6wbwp_lsc0000gn/T//ccxAX9SF.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lnosys] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_16980] ==> ignore
+    arg [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib/crt0.o] ==> ignore
+    arg [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crti.o] ==> ignore
+    arg [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crtbegin.o] ==> ignore
+    arg [-L/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0] ==> dir [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0]
+    arg [-L/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc] ==> dir [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc]
+    arg [-L/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib] ==> dir [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib]
+    arg [CMakeFiles/cmTC_16980.dir/CMakeCCompilerABI.c.obj] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lnosys] ==> lib [nosys]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crtend.o] ==> ignore
+    arg [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crtn.o] ==> ignore
+  collapse library dir [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0] ==> [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/lib/gcc/xtensa-esp32-elf/11.2.0]
+  collapse library dir [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc] ==> [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/lib/gcc]
+  collapse library dir [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib] ==> [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/xtensa-esp32-elf/lib]
+  implicit libs: [gcc;c;nosys;c;gcc]
+  implicit dirs: [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/lib/gcc/xtensa-esp32-elf/11.2.0;/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/lib/gcc;/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/xtensa-esp32-elf/lib]
+  implicit fwks: []
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /Users/vaibhav/Developer/projects/Swarm-Research/autonomous-vehicle/playground/.pio/build/esp32dev/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Users/vaibhav/.platformio/packages/tool-ninja/ninja cmTC_47a54 && [1/2] Building CXX object CMakeFiles/cmTC_47a54.dir/testCXXCompiler.cxx.obj
+[2/2] Linking CXX executable cmTC_47a54
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /Users/vaibhav/Developer/projects/Swarm-Research/autonomous-vehicle/playground/.pio/build/esp32dev/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Users/vaibhav/.platformio/packages/tool-ninja/ninja cmTC_302f3 && [1/2] Building CXX object CMakeFiles/cmTC_302f3.dir/CMakeCXXCompilerABI.cpp.obj
+Using built-in specs.
+COLLECT_GCC=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/xtensa-esp32-elf-g++
+Target: xtensa-esp32-elf
+Configured with: /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/src/gcc/configure --build=aarch64-build_apple-darwin21.4.0 --host=aarch64-build_apple-darwin21.4.0 --target=xtensa-esp32-elf --prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-mpfr=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-mpc=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-isl=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_302f3.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_302f3.dir/'
+ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/cc1plus -quiet -v -iprefix /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/ /Users/vaibhav/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_302f3.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mlongcalls -Wno-frame-address -version -o /var/folders/52/14hdcd_d3451gmf6wbwp_lsc0000gn/T//ccCE1zFN.s
+GNU C++17 (crosstool-NG esp-2022r1) version 11.2.0 (xtensa-esp32-elf)
+	compiled by GNU C version Apple LLVM 13.0.0 (clang-1300.0.27.3), GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/../../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0"
+ignoring duplicate directory "/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/../../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0/xtensa-esp32-elf"
+ignoring duplicate directory "/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/../../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0/backward"
+ignoring duplicate directory "/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/../../lib/gcc/xtensa-esp32-elf/11.2.0/include"
+ignoring duplicate directory "/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/../../lib/gcc/xtensa-esp32-elf/11.2.0/include-fixed"
+ignoring duplicate directory "/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/../../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/sys-include"
+ignoring duplicate directory "/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/../../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0
+ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0/xtensa-esp32-elf
+ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0/backward
+ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/include
+ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/include-fixed
+ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/sys-include
+ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include
+End of search list.
+GNU C++17 (crosstool-NG esp-2022r1) version 11.2.0 (xtensa-esp32-elf)
+	compiled by GNU C version Apple LLVM 13.0.0 (clang-1300.0.27.3), GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 0ec0fa8f8350edface28efb76f87877e
+COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_302f3.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_302f3.dir/'
+ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/bin/as --traditional-format --longcalls -o CMakeFiles/cmTC_302f3.dir/CMakeCXXCompilerABI.cpp.obj /var/folders/52/14hdcd_d3451gmf6wbwp_lsc0000gn/T//ccCE1zFN.s
+COMPILER_PATH=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/bin/
+LIBRARY_PATH=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib/
+COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_302f3.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_302f3.dir/CMakeCXXCompilerABI.cpp.'
+[2/2] Linking CXX executable cmTC_302f3
+Using built-in specs.
+COLLECT_GCC=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/xtensa-esp32-elf-g++
+COLLECT_LTO_WRAPPER=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/lto-wrapper
+Target: xtensa-esp32-elf
+Configured with: /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/src/gcc/configure --build=aarch64-build_apple-darwin21.4.0 --host=aarch64-build_apple-darwin21.4.0 --target=xtensa-esp32-elf --prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-mpfr=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-mpc=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-isl=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+COMPILER_PATH=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/bin/
+LIBRARY_PATH=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib/
+COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_302f3' '-dumpdir' 'cmTC_302f3.'
+ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/collect2 -plugin /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/liblto_plugin.so -plugin-opt=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/52/14hdcd_d3451gmf6wbwp_lsc0000gn/T//ccnoApTP.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -o cmTC_302f3 /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib/crt0.o /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crti.o /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crtbegin.o -L/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0 -L/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc -L/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib CMakeFiles/cmTC_302f3.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lc -lnosys -lc -lgcc /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crtend.o /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crtn.o
+COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_302f3' '-dumpdir' 'cmTC_302f3.'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0]
+    add: [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0/xtensa-esp32-elf]
+    add: [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0/backward]
+    add: [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/include]
+    add: [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/include-fixed]
+    add: [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/sys-include]
+    add: [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include]
+  end of search list found
+  collapse include dir [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0] ==> [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/xtensa-esp32-elf/include/c++/11.2.0]
+  collapse include dir [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0/xtensa-esp32-elf] ==> [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/xtensa-esp32-elf/include/c++/11.2.0/xtensa-esp32-elf]
+  collapse include dir [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0/backward] ==> [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/xtensa-esp32-elf/include/c++/11.2.0/backward]
+  collapse include dir [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/include] ==> [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/lib/gcc/xtensa-esp32-elf/11.2.0/include]
+  collapse include dir [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/include-fixed] ==> [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/lib/gcc/xtensa-esp32-elf/11.2.0/include-fixed]
+  collapse include dir [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/sys-include] ==> [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/xtensa-esp32-elf/sys-include]
+  collapse include dir [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include] ==> [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/xtensa-esp32-elf/include]
+  implicit include dirs: [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/xtensa-esp32-elf/include/c++/11.2.0;/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/xtensa-esp32-elf/include/c++/11.2.0/xtensa-esp32-elf;/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/xtensa-esp32-elf/include/c++/11.2.0/backward;/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/lib/gcc/xtensa-esp32-elf/11.2.0/include;/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/lib/gcc/xtensa-esp32-elf/11.2.0/include-fixed;/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/xtensa-esp32-elf/sys-include;/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/xtensa-esp32-elf/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(xtensa-esp32-elf-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/vaibhav/Developer/projects/Swarm-Research/autonomous-vehicle/playground/.pio/build/esp32dev/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/Users/vaibhav/.platformio/packages/tool-ninja/ninja cmTC_302f3 && [1/2] Building CXX object CMakeFiles/cmTC_302f3.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/xtensa-esp32-elf-g++]
+  ignore line: [Target: xtensa-esp32-elf]
+  ignore line: [Configured with: /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/src/gcc/configure --build=aarch64-build_apple-darwin21.4.0 --host=aarch64-build_apple-darwin21.4.0 --target=xtensa-esp32-elf --prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-mpfr=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-mpc=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-isl=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 11.2.0 (crosstool-NG esp-2022r1) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_302f3.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_302f3.dir/']
+  ignore line: [ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/cc1plus -quiet -v -iprefix /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/ /Users/vaibhav/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_302f3.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mlongcalls -Wno-frame-address -version -o /var/folders/52/14hdcd_d3451gmf6wbwp_lsc0000gn/T//ccCE1zFN.s]
+  ignore line: [GNU C++17 (crosstool-NG esp-2022r1) version 11.2.0 (xtensa-esp32-elf)]
+  ignore line: [	compiled by GNU C version Apple LLVM 13.0.0 (clang-1300.0.27.3)  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/../../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0"]
+  ignore line: [ignoring duplicate directory "/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/../../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0/xtensa-esp32-elf"]
+  ignore line: [ignoring duplicate directory "/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/../../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0/backward"]
+  ignore line: [ignoring duplicate directory "/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/../../lib/gcc/xtensa-esp32-elf/11.2.0/include"]
+  ignore line: [ignoring duplicate directory "/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/../../lib/gcc/xtensa-esp32-elf/11.2.0/include-fixed"]
+  ignore line: [ignoring duplicate directory "/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/../../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/sys-include"]
+  ignore line: [ignoring duplicate directory "/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/../../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0]
+  ignore line: [ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0/xtensa-esp32-elf]
+  ignore line: [ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0/backward]
+  ignore line: [ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/include]
+  ignore line: [ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/include-fixed]
+  ignore line: [ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/sys-include]
+  ignore line: [ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++17 (crosstool-NG esp-2022r1) version 11.2.0 (xtensa-esp32-elf)]
+  ignore line: [	compiled by GNU C version Apple LLVM 13.0.0 (clang-1300.0.27.3)  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 0ec0fa8f8350edface28efb76f87877e]
+  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_302f3.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_302f3.dir/']
+  ignore line: [ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/bin/as --traditional-format --longcalls -o CMakeFiles/cmTC_302f3.dir/CMakeCXXCompilerABI.cpp.obj /var/folders/52/14hdcd_d3451gmf6wbwp_lsc0000gn/T//ccCE1zFN.s]
+  ignore line: [COMPILER_PATH=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/bin/]
+  ignore line: [LIBRARY_PATH=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_302f3.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_302f3.dir/CMakeCXXCompilerABI.cpp.']
+  ignore line: [[2/2] Linking CXX executable cmTC_302f3]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/xtensa-esp32-elf-g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/lto-wrapper]
+  ignore line: [Target: xtensa-esp32-elf]
+  ignore line: [Configured with: /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/src/gcc/configure --build=aarch64-build_apple-darwin21.4.0 --host=aarch64-build_apple-darwin21.4.0 --target=xtensa-esp32-elf --prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-mpfr=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-mpc=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-isl=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 11.2.0 (crosstool-NG esp-2022r1) ]
+  ignore line: [COMPILER_PATH=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/bin/]
+  ignore line: [LIBRARY_PATH=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_302f3' '-dumpdir' 'cmTC_302f3.']
+  link line: [ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/collect2 -plugin /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/liblto_plugin.so -plugin-opt=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/52/14hdcd_d3451gmf6wbwp_lsc0000gn/T//ccnoApTP.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -o cmTC_302f3 /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib/crt0.o /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crti.o /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crtbegin.o -L/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0 -L/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc -L/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib CMakeFiles/cmTC_302f3.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lc -lnosys -lc -lgcc /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crtend.o /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crtn.o]
+    arg [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/var/folders/52/14hdcd_d3451gmf6wbwp_lsc0000gn/T//ccnoApTP.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lnosys] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_302f3] ==> ignore
+    arg [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib/crt0.o] ==> ignore
+    arg [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crti.o] ==> ignore
+    arg [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crtbegin.o] ==> ignore
+    arg [-L/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0] ==> dir [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0]
+    arg [-L/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc] ==> dir [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc]
+    arg [-L/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib] ==> dir [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib]
+    arg [CMakeFiles/cmTC_302f3.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lnosys] ==> lib [nosys]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crtend.o] ==> ignore
+    arg [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crtn.o] ==> ignore
+  collapse library dir [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0] ==> [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/lib/gcc/xtensa-esp32-elf/11.2.0]
+  collapse library dir [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc] ==> [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/lib/gcc]
+  collapse library dir [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib] ==> [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/xtensa-esp32-elf/lib]
+  implicit libs: [stdc++;m;gcc;c;nosys;c;gcc]
+  implicit dirs: [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/lib/gcc/xtensa-esp32-elf/11.2.0;/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/lib/gcc;/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/xtensa-esp32-elf/lib]
+  implicit fwks: []
+
+
+The target system is: Generic -  - 
+The host system is: Darwin - 22.1.0 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/xtensa-esp32-elf-gcc 
+Build flags: -mlongcalls;-Wno-frame-address;
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/Users/vaibhav/Developer/projects/Swarm-Research/autonomous-vehicle/playground/.pio/build/esp32dev/CMakeFiles/3.16.4/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/xtensa-esp32-elf-g++ 
+Build flags: -mlongcalls;-Wno-frame-address;
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/Users/vaibhav/Developer/projects/Swarm-Research/autonomous-vehicle/playground/.pio/build/esp32dev/CMakeFiles/3.16.4/CompilerIdCXX/a.out"
+
+Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+xtensa-esp32-elf-gcc (crosstool-NG esp-2022r1) 11.2.0
+Copyright (C) 2021 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /Users/vaibhav/Developer/projects/Swarm-Research/autonomous-vehicle/playground/.pio/build/esp32dev/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Users/vaibhav/.platformio/packages/tool-ninja/ninja cmTC_68897 && [1/2] Building C object CMakeFiles/cmTC_68897.dir/testCCompiler.c.obj
+[2/2] Linking C executable cmTC_68897
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /Users/vaibhav/Developer/projects/Swarm-Research/autonomous-vehicle/playground/.pio/build/esp32dev/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Users/vaibhav/.platformio/packages/tool-ninja/ninja cmTC_8c22f && [1/2] Building C object CMakeFiles/cmTC_8c22f.dir/CMakeCCompilerABI.c.obj
+Using built-in specs.
+COLLECT_GCC=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/xtensa-esp32-elf-gcc
+Target: xtensa-esp32-elf
+Configured with: /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/src/gcc/configure --build=aarch64-build_apple-darwin21.4.0 --host=aarch64-build_apple-darwin21.4.0 --target=xtensa-esp32-elf --prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-mpfr=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-mpc=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-isl=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_8c22f.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_8c22f.dir/'
+ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/cc1 -quiet -v -iprefix /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/ /Users/vaibhav/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_8c22f.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlongcalls -Wno-frame-address -version -o /var/folders/52/14hdcd_d3451gmf6wbwp_lsc0000gn/T//ccR8mNCK.s
+GNU C17 (crosstool-NG esp-2022r1) version 11.2.0 (xtensa-esp32-elf)
+	compiled by GNU C version Apple LLVM 13.0.0 (clang-1300.0.27.3), GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/../../lib/gcc/xtensa-esp32-elf/11.2.0/include"
+ignoring duplicate directory "/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/../../lib/gcc/xtensa-esp32-elf/11.2.0/include-fixed"
+ignoring duplicate directory "/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/../../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/sys-include"
+ignoring duplicate directory "/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/../../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/include
+ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/include-fixed
+ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/sys-include
+ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include
+End of search list.
+GNU C17 (crosstool-NG esp-2022r1) version 11.2.0 (xtensa-esp32-elf)
+	compiled by GNU C version Apple LLVM 13.0.0 (clang-1300.0.27.3), GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 416736c96ebb5802820cc8aed8b76115
+COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_8c22f.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_8c22f.dir/'
+ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/bin/as --traditional-format --longcalls -o CMakeFiles/cmTC_8c22f.dir/CMakeCCompilerABI.c.obj /var/folders/52/14hdcd_d3451gmf6wbwp_lsc0000gn/T//ccR8mNCK.s
+COMPILER_PATH=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/bin/
+LIBRARY_PATH=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib/
+COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_8c22f.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_8c22f.dir/CMakeCCompilerABI.c.'
+[2/2] Linking C executable cmTC_8c22f
+Using built-in specs.
+COLLECT_GCC=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/xtensa-esp32-elf-gcc
+COLLECT_LTO_WRAPPER=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/lto-wrapper
+Target: xtensa-esp32-elf
+Configured with: /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/src/gcc/configure --build=aarch64-build_apple-darwin21.4.0 --host=aarch64-build_apple-darwin21.4.0 --target=xtensa-esp32-elf --prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-mpfr=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-mpc=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-isl=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+COMPILER_PATH=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/bin/
+LIBRARY_PATH=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib/
+COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_8c22f' '-dumpdir' 'cmTC_8c22f.'
+ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/collect2 -plugin /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/liblto_plugin.so -plugin-opt=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/52/14hdcd_d3451gmf6wbwp_lsc0000gn/T//cc6NK5v7.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -o cmTC_8c22f /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib/crt0.o /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crti.o /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crtbegin.o -L/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0 -L/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc -L/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib CMakeFiles/cmTC_8c22f.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lnosys -lc -lgcc /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crtend.o /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crtn.o
+COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_8c22f' '-dumpdir' 'cmTC_8c22f.'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/include]
+    add: [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/include-fixed]
+    add: [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/sys-include]
+    add: [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include]
+  end of search list found
+  collapse include dir [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/include] ==> [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/lib/gcc/xtensa-esp32-elf/11.2.0/include]
+  collapse include dir [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/include-fixed] ==> [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/lib/gcc/xtensa-esp32-elf/11.2.0/include-fixed]
+  collapse include dir [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/sys-include] ==> [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/xtensa-esp32-elf/sys-include]
+  collapse include dir [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include] ==> [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/xtensa-esp32-elf/include]
+  implicit include dirs: [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/lib/gcc/xtensa-esp32-elf/11.2.0/include;/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/lib/gcc/xtensa-esp32-elf/11.2.0/include-fixed;/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/xtensa-esp32-elf/sys-include;/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/xtensa-esp32-elf/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(xtensa-esp32-elf-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/vaibhav/Developer/projects/Swarm-Research/autonomous-vehicle/playground/.pio/build/esp32dev/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/Users/vaibhav/.platformio/packages/tool-ninja/ninja cmTC_8c22f && [1/2] Building C object CMakeFiles/cmTC_8c22f.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/xtensa-esp32-elf-gcc]
+  ignore line: [Target: xtensa-esp32-elf]
+  ignore line: [Configured with: /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/src/gcc/configure --build=aarch64-build_apple-darwin21.4.0 --host=aarch64-build_apple-darwin21.4.0 --target=xtensa-esp32-elf --prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-mpfr=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-mpc=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-isl=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 11.2.0 (crosstool-NG esp-2022r1) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_8c22f.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_8c22f.dir/']
+  ignore line: [ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/cc1 -quiet -v -iprefix /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/ /Users/vaibhav/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_8c22f.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlongcalls -Wno-frame-address -version -o /var/folders/52/14hdcd_d3451gmf6wbwp_lsc0000gn/T//ccR8mNCK.s]
+  ignore line: [GNU C17 (crosstool-NG esp-2022r1) version 11.2.0 (xtensa-esp32-elf)]
+  ignore line: [	compiled by GNU C version Apple LLVM 13.0.0 (clang-1300.0.27.3)  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/../../lib/gcc/xtensa-esp32-elf/11.2.0/include"]
+  ignore line: [ignoring duplicate directory "/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/../../lib/gcc/xtensa-esp32-elf/11.2.0/include-fixed"]
+  ignore line: [ignoring duplicate directory "/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/../../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/sys-include"]
+  ignore line: [ignoring duplicate directory "/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/../../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/include]
+  ignore line: [ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/include-fixed]
+  ignore line: [ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/sys-include]
+  ignore line: [ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (crosstool-NG esp-2022r1) version 11.2.0 (xtensa-esp32-elf)]
+  ignore line: [	compiled by GNU C version Apple LLVM 13.0.0 (clang-1300.0.27.3)  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 416736c96ebb5802820cc8aed8b76115]
+  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_8c22f.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_8c22f.dir/']
+  ignore line: [ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/bin/as --traditional-format --longcalls -o CMakeFiles/cmTC_8c22f.dir/CMakeCCompilerABI.c.obj /var/folders/52/14hdcd_d3451gmf6wbwp_lsc0000gn/T//ccR8mNCK.s]
+  ignore line: [COMPILER_PATH=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/bin/]
+  ignore line: [LIBRARY_PATH=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_8c22f.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_8c22f.dir/CMakeCCompilerABI.c.']
+  ignore line: [[2/2] Linking C executable cmTC_8c22f]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/xtensa-esp32-elf-gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/lto-wrapper]
+  ignore line: [Target: xtensa-esp32-elf]
+  ignore line: [Configured with: /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/src/gcc/configure --build=aarch64-build_apple-darwin21.4.0 --host=aarch64-build_apple-darwin21.4.0 --target=xtensa-esp32-elf --prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-mpfr=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-mpc=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-isl=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 11.2.0 (crosstool-NG esp-2022r1) ]
+  ignore line: [COMPILER_PATH=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/bin/]
+  ignore line: [LIBRARY_PATH=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_8c22f' '-dumpdir' 'cmTC_8c22f.']
+  link line: [ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/collect2 -plugin /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/liblto_plugin.so -plugin-opt=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/52/14hdcd_d3451gmf6wbwp_lsc0000gn/T//cc6NK5v7.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -o cmTC_8c22f /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib/crt0.o /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crti.o /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crtbegin.o -L/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0 -L/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc -L/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib CMakeFiles/cmTC_8c22f.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lnosys -lc -lgcc /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crtend.o /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crtn.o]
+    arg [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/var/folders/52/14hdcd_d3451gmf6wbwp_lsc0000gn/T//cc6NK5v7.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lnosys] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_8c22f] ==> ignore
+    arg [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib/crt0.o] ==> ignore
+    arg [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crti.o] ==> ignore
+    arg [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crtbegin.o] ==> ignore
+    arg [-L/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0] ==> dir [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0]
+    arg [-L/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc] ==> dir [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc]
+    arg [-L/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib] ==> dir [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib]
+    arg [CMakeFiles/cmTC_8c22f.dir/CMakeCCompilerABI.c.obj] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lnosys] ==> lib [nosys]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crtend.o] ==> ignore
+    arg [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crtn.o] ==> ignore
+  collapse library dir [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0] ==> [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/lib/gcc/xtensa-esp32-elf/11.2.0]
+  collapse library dir [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc] ==> [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/lib/gcc]
+  collapse library dir [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib] ==> [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/xtensa-esp32-elf/lib]
+  implicit libs: [gcc;c;nosys;c;gcc]
+  implicit dirs: [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/lib/gcc/xtensa-esp32-elf/11.2.0;/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/lib/gcc;/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/xtensa-esp32-elf/lib]
+  implicit fwks: []
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /Users/vaibhav/Developer/projects/Swarm-Research/autonomous-vehicle/playground/.pio/build/esp32dev/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Users/vaibhav/.platformio/packages/tool-ninja/ninja cmTC_905c8 && [1/2] Building CXX object CMakeFiles/cmTC_905c8.dir/testCXXCompiler.cxx.obj
+[2/2] Linking CXX executable cmTC_905c8
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /Users/vaibhav/Developer/projects/Swarm-Research/autonomous-vehicle/playground/.pio/build/esp32dev/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Users/vaibhav/.platformio/packages/tool-ninja/ninja cmTC_b4ba2 && [1/2] Building CXX object CMakeFiles/cmTC_b4ba2.dir/CMakeCXXCompilerABI.cpp.obj
+Using built-in specs.
+COLLECT_GCC=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/xtensa-esp32-elf-g++
+Target: xtensa-esp32-elf
+Configured with: /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/src/gcc/configure --build=aarch64-build_apple-darwin21.4.0 --host=aarch64-build_apple-darwin21.4.0 --target=xtensa-esp32-elf --prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-mpfr=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-mpc=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-isl=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_b4ba2.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_b4ba2.dir/'
+ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/cc1plus -quiet -v -iprefix /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/ /Users/vaibhav/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_b4ba2.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mlongcalls -Wno-frame-address -version -o /var/folders/52/14hdcd_d3451gmf6wbwp_lsc0000gn/T//ccSINS5O.s
+GNU C++17 (crosstool-NG esp-2022r1) version 11.2.0 (xtensa-esp32-elf)
+	compiled by GNU C version Apple LLVM 13.0.0 (clang-1300.0.27.3), GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/../../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0"
+ignoring duplicate directory "/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/../../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0/xtensa-esp32-elf"
+ignoring duplicate directory "/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/../../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0/backward"
+ignoring duplicate directory "/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/../../lib/gcc/xtensa-esp32-elf/11.2.0/include"
+ignoring duplicate directory "/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/../../lib/gcc/xtensa-esp32-elf/11.2.0/include-fixed"
+ignoring duplicate directory "/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/../../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/sys-include"
+ignoring duplicate directory "/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/../../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0
+ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0/xtensa-esp32-elf
+ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0/backward
+ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/include
+ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/include-fixed
+ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/sys-include
+ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include
+End of search list.
+GNU C++17 (crosstool-NG esp-2022r1) version 11.2.0 (xtensa-esp32-elf)
+	compiled by GNU C version Apple LLVM 13.0.0 (clang-1300.0.27.3), GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 0ec0fa8f8350edface28efb76f87877e
+COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_b4ba2.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_b4ba2.dir/'
+ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/bin/as --traditional-format --longcalls -o CMakeFiles/cmTC_b4ba2.dir/CMakeCXXCompilerABI.cpp.obj /var/folders/52/14hdcd_d3451gmf6wbwp_lsc0000gn/T//ccSINS5O.s
+COMPILER_PATH=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/bin/
+LIBRARY_PATH=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib/
+COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_b4ba2.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_b4ba2.dir/CMakeCXXCompilerABI.cpp.'
+[2/2] Linking CXX executable cmTC_b4ba2
+Using built-in specs.
+COLLECT_GCC=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/xtensa-esp32-elf-g++
+COLLECT_LTO_WRAPPER=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/lto-wrapper
+Target: xtensa-esp32-elf
+Configured with: /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/src/gcc/configure --build=aarch64-build_apple-darwin21.4.0 --host=aarch64-build_apple-darwin21.4.0 --target=xtensa-esp32-elf --prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-mpfr=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-mpc=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-isl=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+COMPILER_PATH=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/bin/
+LIBRARY_PATH=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib/
+COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_b4ba2' '-dumpdir' 'cmTC_b4ba2.'
+ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/collect2 -plugin /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/liblto_plugin.so -plugin-opt=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/52/14hdcd_d3451gmf6wbwp_lsc0000gn/T//cchkVdw6.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -o cmTC_b4ba2 /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib/crt0.o /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crti.o /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crtbegin.o -L/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0 -L/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc -L/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib CMakeFiles/cmTC_b4ba2.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lc -lnosys -lc -lgcc /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crtend.o /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crtn.o
+COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_b4ba2' '-dumpdir' 'cmTC_b4ba2.'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0]
+    add: [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0/xtensa-esp32-elf]
+    add: [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0/backward]
+    add: [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/include]
+    add: [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/include-fixed]
+    add: [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/sys-include]
+    add: [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include]
+  end of search list found
+  collapse include dir [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0] ==> [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/xtensa-esp32-elf/include/c++/11.2.0]
+  collapse include dir [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0/xtensa-esp32-elf] ==> [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/xtensa-esp32-elf/include/c++/11.2.0/xtensa-esp32-elf]
+  collapse include dir [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0/backward] ==> [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/xtensa-esp32-elf/include/c++/11.2.0/backward]
+  collapse include dir [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/include] ==> [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/lib/gcc/xtensa-esp32-elf/11.2.0/include]
+  collapse include dir [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/include-fixed] ==> [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/lib/gcc/xtensa-esp32-elf/11.2.0/include-fixed]
+  collapse include dir [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/sys-include] ==> [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/xtensa-esp32-elf/sys-include]
+  collapse include dir [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include] ==> [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/xtensa-esp32-elf/include]
+  implicit include dirs: [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/xtensa-esp32-elf/include/c++/11.2.0;/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/xtensa-esp32-elf/include/c++/11.2.0/xtensa-esp32-elf;/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/xtensa-esp32-elf/include/c++/11.2.0/backward;/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/lib/gcc/xtensa-esp32-elf/11.2.0/include;/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/lib/gcc/xtensa-esp32-elf/11.2.0/include-fixed;/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/xtensa-esp32-elf/sys-include;/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/xtensa-esp32-elf/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(xtensa-esp32-elf-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/vaibhav/Developer/projects/Swarm-Research/autonomous-vehicle/playground/.pio/build/esp32dev/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/Users/vaibhav/.platformio/packages/tool-ninja/ninja cmTC_b4ba2 && [1/2] Building CXX object CMakeFiles/cmTC_b4ba2.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/xtensa-esp32-elf-g++]
+  ignore line: [Target: xtensa-esp32-elf]
+  ignore line: [Configured with: /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/src/gcc/configure --build=aarch64-build_apple-darwin21.4.0 --host=aarch64-build_apple-darwin21.4.0 --target=xtensa-esp32-elf --prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-mpfr=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-mpc=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-isl=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 11.2.0 (crosstool-NG esp-2022r1) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_b4ba2.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_b4ba2.dir/']
+  ignore line: [ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/cc1plus -quiet -v -iprefix /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/ /Users/vaibhav/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_b4ba2.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mlongcalls -Wno-frame-address -version -o /var/folders/52/14hdcd_d3451gmf6wbwp_lsc0000gn/T//ccSINS5O.s]
+  ignore line: [GNU C++17 (crosstool-NG esp-2022r1) version 11.2.0 (xtensa-esp32-elf)]
+  ignore line: [	compiled by GNU C version Apple LLVM 13.0.0 (clang-1300.0.27.3)  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/../../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0"]
+  ignore line: [ignoring duplicate directory "/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/../../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0/xtensa-esp32-elf"]
+  ignore line: [ignoring duplicate directory "/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/../../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0/backward"]
+  ignore line: [ignoring duplicate directory "/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/../../lib/gcc/xtensa-esp32-elf/11.2.0/include"]
+  ignore line: [ignoring duplicate directory "/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/../../lib/gcc/xtensa-esp32-elf/11.2.0/include-fixed"]
+  ignore line: [ignoring duplicate directory "/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/../../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/sys-include"]
+  ignore line: [ignoring duplicate directory "/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/../../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0]
+  ignore line: [ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0/xtensa-esp32-elf]
+  ignore line: [ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0/backward]
+  ignore line: [ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/include]
+  ignore line: [ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/include-fixed]
+  ignore line: [ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/sys-include]
+  ignore line: [ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++17 (crosstool-NG esp-2022r1) version 11.2.0 (xtensa-esp32-elf)]
+  ignore line: [	compiled by GNU C version Apple LLVM 13.0.0 (clang-1300.0.27.3)  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 0ec0fa8f8350edface28efb76f87877e]
+  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_b4ba2.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_b4ba2.dir/']
+  ignore line: [ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/bin/as --traditional-format --longcalls -o CMakeFiles/cmTC_b4ba2.dir/CMakeCXXCompilerABI.cpp.obj /var/folders/52/14hdcd_d3451gmf6wbwp_lsc0000gn/T//ccSINS5O.s]
+  ignore line: [COMPILER_PATH=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/bin/]
+  ignore line: [LIBRARY_PATH=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_b4ba2.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_b4ba2.dir/CMakeCXXCompilerABI.cpp.']
+  ignore line: [[2/2] Linking CXX executable cmTC_b4ba2]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/xtensa-esp32-elf-g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/lto-wrapper]
+  ignore line: [Target: xtensa-esp32-elf]
+  ignore line: [Configured with: /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/src/gcc/configure --build=aarch64-build_apple-darwin21.4.0 --host=aarch64-build_apple-darwin21.4.0 --target=xtensa-esp32-elf --prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-mpfr=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-mpc=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --with-isl=/Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp32-elf/buildtools --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 11.2.0 (crosstool-NG esp-2022r1) ]
+  ignore line: [COMPILER_PATH=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/bin/]
+  ignore line: [LIBRARY_PATH=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/:/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_b4ba2' '-dumpdir' 'cmTC_b4ba2.']
+  link line: [ /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/collect2 -plugin /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/liblto_plugin.so -plugin-opt=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/52/14hdcd_d3451gmf6wbwp_lsc0000gn/T//cchkVdw6.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -o cmTC_b4ba2 /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib/crt0.o /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crti.o /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crtbegin.o -L/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0 -L/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc -L/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib CMakeFiles/cmTC_b4ba2.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lc -lnosys -lc -lgcc /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crtend.o /Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crtn.o]
+    arg [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../libexec/gcc/xtensa-esp32-elf/11.2.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/var/folders/52/14hdcd_d3451gmf6wbwp_lsc0000gn/T//cchkVdw6.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lnosys] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_b4ba2] ==> ignore
+    arg [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib/crt0.o] ==> ignore
+    arg [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crti.o] ==> ignore
+    arg [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crtbegin.o] ==> ignore
+    arg [-L/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0] ==> dir [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0]
+    arg [-L/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc] ==> dir [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc]
+    arg [-L/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib] ==> dir [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib]
+    arg [CMakeFiles/cmTC_b4ba2.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lnosys] ==> lib [nosys]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crtend.o] ==> ignore
+    arg [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/crtn.o] ==> ignore
+  collapse library dir [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0] ==> [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/lib/gcc/xtensa-esp32-elf/11.2.0]
+  collapse library dir [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc] ==> [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/lib/gcc]
+  collapse library dir [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/lib] ==> [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/xtensa-esp32-elf/lib]
+  implicit libs: [stdc++;m;gcc;c;nosys;c;gcc]
+  implicit dirs: [/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/lib/gcc/xtensa-esp32-elf/11.2.0;/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/lib/gcc;/Users/vaibhav/.platformio/packages/toolchain-xtensa-esp32/xtensa-esp32-elf/lib]
+  implicit fwks: []
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /Users/vaibhav/Developer/projects/Swarm-Research/autonomous-vehicle/playground/.pio/build/esp32dev/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Users/vaibhav/.platformio/packages/tool-ninja/ninja cmTC_a0c1d && [1/2] Building C object CMakeFiles/cmTC_a0c1d.dir/CheckIncludeFile.c.obj
+[2/2] Linking C executable cmTC_a0c1d
+
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /Users/vaibhav/Developer/projects/Swarm-Research/autonomous-vehicle/playground/.pio/build/esp32dev/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Users/vaibhav/.platformio/packages/tool-ninja/ninja cmTC_c683a && [1/2] Building C object CMakeFiles/cmTC_c683a.dir/CheckIncludeFile.c.obj
+[2/2] Linking C executable cmTC_c683a
+
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /Users/vaibhav/Developer/projects/Swarm-Research/autonomous-vehicle/playground/.pio/build/esp32dev/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Users/vaibhav/.platformio/packages/tool-ninja/ninja cmTC_46c12 && [1/2] Building C object CMakeFiles/cmTC_46c12.dir/CheckIncludeFile.c.obj
+[2/2] Linking C executable cmTC_46c12
+
+
+
+Determining size of time_t passed with the following output:
+Change Dir: /Users/vaibhav/Developer/projects/Swarm-Research/autonomous-vehicle/playground/.pio/build/esp32dev/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Users/vaibhav/.platformio/packages/tool-ninja/ninja cmTC_a6869 && [1/2] Building C object CMakeFiles/cmTC_a6869.dir/TIME_T_SIZE.c.obj
+[2/2] Linking C executable cmTC_a6869
+
+
+
+Performing C SOURCE FILE Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS succeeded with the following output:
+Change Dir: /Users/vaibhav/Developer/projects/Swarm-Research/autonomous-vehicle/playground/.pio/build/esp32dev/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Users/vaibhav/.platformio/packages/tool-ninja/ninja cmTC_83ab9 && [1/2] Building C object CMakeFiles/cmTC_83ab9.dir/src.c.obj
+[2/2] Linking C executable cmTC_83ab9
+
+
+Source file was:
+int main(void) { return 0; }
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /Users/vaibhav/Developer/projects/Swarm-Research/autonomous-vehicle/playground/.pio/build/esp32dev/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Users/vaibhav/.platformio/packages/tool-ninja/ninja cmTC_c3765 && [1/2] Building C object CMakeFiles/cmTC_c3765.dir/CheckIncludeFile.c.obj
+[2/2] Linking C executable cmTC_c3765
+
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /Users/vaibhav/Developer/projects/Swarm-Research/autonomous-vehicle/playground/.pio/build/esp32dev/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Users/vaibhav/.platformio/packages/tool-ninja/ninja cmTC_bbcb4 && [1/2] Building C object CMakeFiles/cmTC_bbcb4.dir/CheckIncludeFile.c.obj
+[2/2] Linking C executable cmTC_bbcb4
+
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /Users/vaibhav/Developer/projects/Swarm-Research/autonomous-vehicle/playground/.pio/build/esp32dev/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Users/vaibhav/.platformio/packages/tool-ninja/ninja cmTC_67f84 && [1/2] Building C object CMakeFiles/cmTC_67f84.dir/CheckIncludeFile.c.obj
+[2/2] Linking C executable cmTC_67f84
+
+
+
+Determining size of time_t passed with the following output:
+Change Dir: /Users/vaibhav/Developer/projects/Swarm-Research/autonomous-vehicle/playground/.pio/build/esp32dev/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Users/vaibhav/.platformio/packages/tool-ninja/ninja cmTC_ed4ee && [1/2] Building C object CMakeFiles/cmTC_ed4ee.dir/TIME_T_SIZE.c.obj
+[2/2] Linking C executable cmTC_ed4ee
+
+
+
+Performing C SOURCE FILE Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS succeeded with the following output:
+Change Dir: /Users/vaibhav/Developer/projects/Swarm-Research/autonomous-vehicle/playground/.pio/build/esp32dev/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Users/vaibhav/.platformio/packages/tool-ninja/ninja cmTC_3afe7 && [1/2] Building C object CMakeFiles/cmTC_3afe7.dir/src.c.obj
+[2/2] Linking C executable cmTC_3afe7
+
+
+Source file was:
+int main(void) { return 0; }

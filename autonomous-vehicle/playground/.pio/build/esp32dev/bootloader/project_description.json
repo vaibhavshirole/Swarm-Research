@@ -1,0 +1,25 @@
+{
+    "project_name":       "bootloader",
+    "project_path":       "/Users/vaibhav/.platformio/packages/framework-espidf/components/bootloader/subproject",
+    "build_dir":          "/Users/vaibhav/Developer/projects/Swarm-Research/autonomous-vehicle/playground/.pio/build/esp32dev/bootloader",
+    "config_file":        "/Users/vaibhav/Developer/projects/Swarm-Research/autonomous-vehicle/playground/sdkconfig.esp32dev",
+    "config_defaults":    "",
+    "bootloader_elf":     "",
+    "app_elf":            "bootloader.elf",
+    "app_bin":            "bootloader.bin",
+    "git_revision":       "5.0.1",
+    "target":             "esp32",
+    "rev":                "0",
+    "min_rev":            "0",
+    "max_rev":            "399",
+    "phy_data_partition": "",
+    "monitor_baud" :      "115200",
+    "monitor_toolprefix": "xtensa-esp32-elf-",
+    "config_environment" : {
+        "COMPONENT_KCONFIGS" : "/Users/vaibhav/.platformio/packages/framework-espidf/components/efuse/Kconfig;/Users/vaibhav/.platformio/packages/framework-espidf/components/esp_common/Kconfig;/Users/vaibhav/.platformio/packages/framework-espidf/components/esp_hw_support/Kconfig;/Users/vaibhav/.platformio/packages/framework-espidf/components/esp_system/Kconfig;/Users/vaibhav/.platformio/packages/framework-espidf/components/freertos/Kconfig;/Users/vaibhav/.platformio/packages/framework-espidf/components/hal/Kconfig;/Users/vaibhav/.platformio/packages/framework-espidf/components/log/Kconfig;/Users/vaibhav/.platformio/packages/framework-espidf/components/newlib/Kconfig;/Users/vaibhav/.platformio/packages/framework-espidf/components/spi_flash/Kconfig",
+        "COMPONENT_KCONFIGS_PROJBUILD" : "/Users/vaibhav/.platformio/packages/framework-espidf/components/bootloader/Kconfig.projbuild;/Users/vaibhav/.platformio/packages/framework-espidf/components/esp_app_format/Kconfig.projbuild;/Users/vaibhav/.platformio/packages/framework-espidf/components/esp_rom/Kconfig.projbuild;/Users/vaibhav/.platformio/packages/framework-espidf/components/esptool_py/Kconfig.projbuild;/Users/vaibhav/.platformio/packages/framework-espidf/components/partition_table/Kconfig.projbuild"
+    },
+    "build_components" : [ "bootloader", "bootloader_support", "efuse", "esp_app_format", "esp_common", "esp_hw_support", "esp_rom", "esp_system", "esptool_py", "freertos", "hal", "log", "main", "micro-ecc", "newlib", "partition_table", "soc", "spi_flash", "xtensa", "" ],
+    "build_component_paths" : [ "/Users/vaibhav/.platformio/packages/framework-espidf/components/bootloader", "/Users/vaibhav/.platformio/packages/framework-espidf/components/bootloader_support", "/Users/vaibhav/.platformio/packages/framework-espidf/components/efuse", "/Users/vaibhav/.platformio/packages/framework-espidf/components/esp_app_format", "/Users/vaibhav/.platformio/packages/framework-espidf/components/esp_common", "/Users/vaibhav/.platformio/packages/framework-espidf/components/esp_hw_support", "/Users/vaibhav/.platformio/packages/framework-espidf/components/esp_rom", "/Users/vaibhav/.platformio/packages/framework-espidf/components/esp_system", "/Users/vaibhav/.platformio/packages/framework-espidf/components/esptool_py", "/Users/vaibhav/.platformio/packages/framework-espidf/components/freertos", "/Users/vaibhav/.platformio/packages/framework-espidf/components/hal", "/Users/vaibhav/.platformio/packages/framework-espidf/components/log", "/Users/vaibhav/.platformio/packages/framework-espidf/components/bootloader/subproject/main", "/Users/vaibhav/.platformio/packages/framework-espidf/components/bootloader/subproject/components/micro-ecc", "/Users/vaibhav/.platformio/packages/framework-espidf/components/newlib", "/Users/vaibhav/.platformio/packages/framework-espidf/components/partition_table", "/Users/vaibhav/.platformio/packages/framework-espidf/components/soc", "/Users/vaibhav/.platformio/packages/framework-espidf/components/spi_flash", "/Users/vaibhav/.platformio/packages/framework-espidf/components/xtensa", "" ],
+    "debug_prefix_map_gdbinit": ""
+}
