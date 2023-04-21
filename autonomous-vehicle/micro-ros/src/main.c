@@ -10,6 +10,14 @@
 #define TRIGGER_GPIO 5
 #define ECHO_GPIO 18
 
+// MEETING NOTES 4/21
+//
+// NOTES:
+// - Abandoned ROS in favor of running on-device
+//
+// TO-DO:  
+// - Figure out how to run SLAM-type mapping straight on ESP-32 (maybe ESP-32S)
+// - Make sure the vehicle can be made even smaller
 
 void ultrasonic_test(void *pvParameters)
 {
