@@ -4,10 +4,7 @@
 #include "freertos/task.h"
 #include "freertos/queue.h"
 #include "esp_log.h"
-#include "esp_timer.h"
-#include "driver/pulse_cnt.h"
 #include "bdc_motor.h"
-#include "pid_ctrl.h"
 
 /* General BDC motor defines */
 #define BDC_MCPWM_TIMER_RESOLUTION_HZ 10000000 // 10MHz, 1 tick = 0.1us
