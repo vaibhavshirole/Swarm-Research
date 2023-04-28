@@ -2,6 +2,8 @@
     "files.associations": {
         "freertos.h": "c",
         "task.h": "c",
-        "pid_ctrl.h": "c"
+        "pid_ctrl.h": "c",
+        "bdc_motor.h": "c",
+        "sdkconfig.h": "c"
     }
 }
