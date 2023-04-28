@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "freertos.h": "c"
+        "freertos.h": "c",
+        "task.h": "c",
+        "pid_ctrl.h": "c"
     }
 }
