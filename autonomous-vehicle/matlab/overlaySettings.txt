@@ -1,0 +1,13 @@
+
+X: 1899.51px
+Y: 1285.08px
+
+W: 419.87%
+H: 419.87%
+
+Angle: 8.11
+
+H: 0.00
+V: 0.00
+
+Interpolation: Bicubic
