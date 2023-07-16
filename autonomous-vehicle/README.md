@@ -15,7 +15,7 @@
 ## Hardware
 * 
 ## Software 
-* MQTT-based remote controls for use during testing with web interface
+* Some low hanging fruit: Make classes instead of the mess that is main.c
 * General drivers for LiDAR sensor instead of Arduino-based 
 
 # To-do
@@ -35,6 +35,7 @@
 * Testing robot and all needed hardware either on it or provided
 * 3D model in Fusion 360 to hold encoders in place for odometry
 ## Software
+* MQTT-based remote controls for use during testing with web interface 
 * Project with working PWM motor drivers for ESP-IDF + RTOS
 * ESP-CAM object recognition implementation with TensorFlow and easy way to train recognition
 * Performance testing OpenCV and TinyML

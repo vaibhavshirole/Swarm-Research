@@ -5,7 +5,11 @@
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "freertos/queue.h"
+#include "freertos/event_groups.h"
 #include "esp_log.h"
+#include "esp_system.h"
+#include "esp_wifi.h"
+#include "esp_event.h"
 #include "bdc_motor.h"
 
 /* General BDC motor defines */
@@ -23,8 +27,119 @@
 #define BDC_MCPWM_GPIO_C              32
 #define BDC_MCPWM_GPIO_D              26
 
+#define EXAMPLE_ESP_WIFI_SSID      "username"
+#define EXAMPLE_ESP_WIFI_PASS      "password"
+#define EXAMPLE_ESP_MAXIMUM_RETRY  5
+
+/* FreeRTOS event group to signal when we are connected*/
+static EventGroupHandle_t s_wifi_event_group;
+
+/* The event group allows multiple bits for each event, but we only care about two events:
+ * - we are connected to the AP with an IP
+ * - we failed to connect after the maximum amount of retries */
+#define WIFI_CONNECTED_BIT BIT0
+#define WIFI_FAIL_BIT      BIT1
 
 static const char *TAG = "example"; //for cleaner debugging prints
+
+static int s_retry_num = 0;
+
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+static void wifi_handler(void* arg, esp_event_base_t event_base, int32_t event_id, void* event_data)
+{
+    if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_START) {
+        esp_wifi_connect();
+    } else if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_DISCONNECTED) {
+        if (s_retry_num < EXAMPLE_ESP_MAXIMUM_RETRY) {
+            esp_wifi_connect();
+            s_retry_num++;
+            ESP_LOGI(TAG, "retry to connect to the AP");
+        } else {
+            xEventGroupSetBits(s_wifi_event_group, WIFI_FAIL_BIT);
+        }
+        ESP_LOGI(TAG,"connect to the AP fail");
+    } else if (event_base == IP_EVENT && event_id == IP_EVENT_STA_GOT_IP) {
+        ip_event_got_ip_t* event = (ip_event_got_ip_t*) event_data;
+        ESP_LOGI(TAG, "got ip:" IPSTR, IP2STR(&event->ip_info.ip));
+        s_retry_num = 0;
+        xEventGroupSetBits(s_wifi_event_group, WIFI_CONNECTED_BIT);
+    }
+}
+
+void wifi_init_sta(void)
+{
+    s_wifi_event_group = xEventGroupCreate();
+
+    ESP_ERROR_CHECK(esp_netif_init());
+
+    ESP_ERROR_CHECK(esp_event_loop_create_default());
+    esp_netif_create_default_wifi_sta();
+
+    wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
+    ESP_ERROR_CHECK(esp_wifi_init(&cfg));
+
+    esp_event_handler_instance_t instance_any_id;
+    esp_event_handler_instance_t instance_got_ip;
+    ESP_ERROR_CHECK(esp_event_handler_instance_register(WIFI_EVENT,
+                                                        ESP_EVENT_ANY_ID,
+                                                        &wifi_handler,
+                                                        NULL,
+                                                        &instance_any_id));
+    ESP_ERROR_CHECK(esp_event_handler_instance_register(IP_EVENT,
+                                                        IP_EVENT_STA_GOT_IP,
+                                                        &wifi_handler,
+                                                        NULL,
+                                                        &instance_got_ip));
+
+    wifi_config_t wifi_config = {
+        .sta = {
+            .ssid = EXAMPLE_ESP_WIFI_SSID,
+            .password = EXAMPLE_ESP_WIFI_PASS,
+            /* Setting a password implies station will connect to all security modes including WEP/WPA.
+             * However these modes are deprecated and not advisable to be used. Incase your Access point
+             * doesn't support WPA2, these mode can be enabled by commenting below line */
+	     .threshold.authmode = WIFI_AUTH_WPA2_PSK,
+        },
+    };
+    ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA) );
+    ESP_ERROR_CHECK(esp_wifi_set_config(WIFI_IF_STA, &wifi_config) );
+    ESP_ERROR_CHECK(esp_wifi_start() );
+
+    ESP_LOGI(TAG, "wifi_init_sta finished.");
+
+    /* Waiting until either the connection is established (WIFI_CONNECTED_BIT) or connection failed for the maximum
+     * number of re-tries (WIFI_FAIL_BIT). The bits are set by event_handler() (see above) */
+    EventBits_t bits = xEventGroupWaitBits(s_wifi_event_group,
+            WIFI_CONNECTED_BIT | WIFI_FAIL_BIT,
+            pdFALSE,
+            pdFALSE,
+            portMAX_DELAY);
+
+    /* xEventGroupWaitBits() returns the bits before the call returned, hence we can test which event actually
+     * happened. */
+    if (bits & WIFI_CONNECTED_BIT) {
+        ESP_LOGI(TAG, "connected to ap SSID:%s password:%s",
+                 EXAMPLE_ESP_WIFI_SSID, EXAMPLE_ESP_WIFI_PASS);
+    } else if (bits & WIFI_FAIL_BIT) {
+        ESP_LOGI(TAG, "Failed to connect to SSID:%s, password:%s",
+                 EXAMPLE_ESP_WIFI_SSID, EXAMPLE_ESP_WIFI_PASS);
+    } else {
+        ESP_LOGE(TAG, "UNEXPECTED EVENT");
+    }
+
+    /* The event will not be processed after unregister */
+    ESP_ERROR_CHECK(esp_event_handler_instance_unregister(IP_EVENT, IP_EVENT_STA_GOT_IP, instance_got_ip));
+    ESP_ERROR_CHECK(esp_event_handler_instance_unregister(WIFI_EVENT, ESP_EVENT_ANY_ID, instance_any_id));
+    vEventGroupDelete(s_wifi_event_group);
+}
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
 
 /* set a custom speed */
 void explorer_set_speed(bdc_motor_handle_t left_motor, bdc_motor_handle_t right_motor, uint16_t speed)
@@ -71,51 +186,9 @@ void explorer_drive_ms(bdc_motor_handle_t left_motor, bdc_motor_handle_t right_m
     vTaskDelay(pdMS_TO_TICKS(time));
 }
 
-/* PWM control task */
-static void mcpwm_bdc(void *arg){
-    /* DC motor config */
-    bdc_motor_mcpwm_config_t mcpwm_config = {
-        .group_id = 0,
-        .resolution_hz = BDC_MCPWM_TIMER_RESOLUTION_HZ,
-    };
-
-    ESP_LOGI(TAG, "Create DC motors");
-
-    /* right motor handle */
-    bdc_motor_handle_t right_motor = NULL;
-    bdc_motor_config_t right_motor_config = {
-        .pwm_freq_hz = BDC_MCPWM_FREQ_HZ,
-        .pwma_gpio_num = BDC_MCPWM_GPIO_A,
-        .pwmb_gpio_num = BDC_MCPWM_GPIO_B,
-    };
-    ESP_ERROR_CHECK(bdc_motor_new_mcpwm_device(&right_motor_config, &mcpwm_config, &right_motor));
-    bdc_motor_set_speed(right_motor, (uint32_t)BDC_INIT_SPEED);
-    ESP_LOGI(TAG, "Enable right_motor");
-    ESP_ERROR_CHECK(bdc_motor_enable(right_motor));
-
-    /* left motor handle */
-    bdc_motor_handle_t left_motor = NULL;
-    bdc_motor_config_t left_motor_config = {
-        .pwm_freq_hz = BDC_MCPWM_FREQ_HZ,
-        .pwma_gpio_num = BDC_MCPWM_GPIO_C,
-        .pwmb_gpio_num = BDC_MCPWM_GPIO_D,
-    };
-    ESP_ERROR_CHECK(bdc_motor_new_mcpwm_device(&left_motor_config, &mcpwm_config, &left_motor));
-    bdc_motor_set_speed(left_motor, (uint32_t)BDC_INIT_SPEED);
-    ESP_LOGI(TAG, "Enable left_motor");
-    ESP_ERROR_CHECK(bdc_motor_enable(left_motor));
-
-    while (1) {
-        /* if it looks like it isn't moving, set speed higher. It's a PWM thing */
-        uint16_t speed = BDC_MIN_SPEED;
-
-        uint32_t drive_time_ms = 500;
-
-        explorer_set_speed(left_motor, right_motor, speed);
-        explorer_set_forward(left_motor, right_motor);
-        explorer_drive_ms(left_motor, right_motor, drive_time_ms);
-    }
-}
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
 
 static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_t event_id, void *event_data)
 {
@@ -179,11 +252,68 @@ static void mqtt_app_start(){
     esp_mqtt_client_start(client);
 }
 
-/* run tasks in here - avoid writing other things here! */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+/* TASK: PWM control */
+static void mcpwm_bdc(void *arg){
+    /* DC motor config */
+    bdc_motor_mcpwm_config_t mcpwm_config = {
+        .group_id = 0,
+        .resolution_hz = BDC_MCPWM_TIMER_RESOLUTION_HZ,
+    };
+
+    ESP_LOGI(TAG, "Create DC motors");
+
+    /* right motor handle */
+    bdc_motor_handle_t right_motor = NULL;
+    bdc_motor_config_t right_motor_config = {
+        .pwm_freq_hz = BDC_MCPWM_FREQ_HZ,
+        .pwma_gpio_num = BDC_MCPWM_GPIO_A,
+        .pwmb_gpio_num = BDC_MCPWM_GPIO_B,
+    };
+    ESP_ERROR_CHECK(bdc_motor_new_mcpwm_device(&right_motor_config, &mcpwm_config, &right_motor));
+    bdc_motor_set_speed(right_motor, (uint32_t)BDC_INIT_SPEED);
+    ESP_LOGI(TAG, "Enable right_motor");
+    ESP_ERROR_CHECK(bdc_motor_enable(right_motor));
+
+    /* left motor handle */
+    bdc_motor_handle_t left_motor = NULL;
+    bdc_motor_config_t left_motor_config = {
+        .pwm_freq_hz = BDC_MCPWM_FREQ_HZ,
+        .pwma_gpio_num = BDC_MCPWM_GPIO_C,
+        .pwmb_gpio_num = BDC_MCPWM_GPIO_D,
+    };
+    ESP_ERROR_CHECK(bdc_motor_new_mcpwm_device(&left_motor_config, &mcpwm_config, &left_motor));
+    bdc_motor_set_speed(left_motor, (uint32_t)BDC_INIT_SPEED);
+    ESP_LOGI(TAG, "Enable left_motor");
+    ESP_ERROR_CHECK(bdc_motor_enable(left_motor));
+
+    while (1) {
+        /* if it looks like it isn't moving, set speed higher. It's a PWM thing */
+        uint16_t speed = BDC_MIN_SPEED;
+
+        uint32_t drive_time_ms = 500;
+
+        explorer_set_speed(left_motor, right_motor, speed);
+        explorer_set_forward(left_motor, right_motor);
+        explorer_drive_ms(left_motor, right_motor, drive_time_ms);
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+/* run tasks in here - avoid writing blocking code */
 void app_main(void)
 {
-    wifi_start(); //get connected to wifi
-    mqtt_app_start(); //start up mqtt
+    ESP_LOGI(TAG, "ESP_WIFI_MODE_STA");
+    wifi_init_sta();
+
+    ESP_LOGI(TAG, "ESP_MQTT");
+    mqtt_app_start();
 
     ESP_LOGI(TAG, "Running task...");
     xTaskCreate(mcpwm_bdc, "mcpwm_bdc", 4096, NULL, 5, NULL);
