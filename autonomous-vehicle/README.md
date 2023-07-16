@@ -1,31 +1,41 @@
-# To-do
+# Helpful Resources
+* PWM explainer
+    * https://copperhilltech.com/blog/esp32-dc-motor-pwm-speed-control-pulse-width-modulation-the-hidden-facts/
+* How to: Object Recognition
+    * https://eloquentarduino.com/esp32-camera-object-detection/ 
+* SLAM ideas
+    * https://ieeexplore.ieee.org/document/8276847
+    * https://www.youtube.com/watch?v=aaVWl64vYxQ
+    * https://www.frontiersin.org/articles/10.3389/frobt.2021.618268/full
+    * http://asrl.utias.utoronto.ca/datasets/mrclam/index.html
 
+# In Progress
 ## Hardware
-* Design new (smaller) car
-* Create back wheel for accurate odometry
+* 
+## Software 
+* MQTT-based remote controls for use during testing with web interface
+* General drivers for LiDAR sensor instead of Arduino-based 
 
+# To-do
+## Hardware
+* 3D print encoder holders and make revisions for accorate odometry
+* Design new (smaller) car
 ## Software
+* Translate MATLAB Graph-SLAM formula to work on microcontroller
 * Create controller web interface (for testing)
 * Write LIDAR drivers
-* Run SLAM on ESP32
-
 ## Ordering
 * TB6612 to replace L298N
     * Reason: Size + Efficiency
 
-<br>
-<br>
-
 # Completed
-
 ## Hardware
-* Make testing car
-
+* Testing robot and all needed hardware either on it or provided
+* 3D model in Fusion 360 to hold encoders in place for odometry
 ## Software
-* Car moving using ESP32 and ESP-IDF + RTOS
-* ESP-CAM object recognition implementation with TensorFlow
+* Project with working PWM motor drivers for ESP-IDF + RTOS
+* ESP-CAM object recognition implementation with TensorFlow and easy way to train recognition
 * Performance testing OpenCV and TinyML
-
 ## Ordering
 | 2pc ESP32-CAM                              | https://www.amazon.com/HiLetgo-ESP32-CAM-Development-Bluetooth-Raspberry/dp/B07RXPHYNM | Amazon | $18.49 | 1 | Allows for object detection by running either a TensorFlow model or OpenCV. Using the camera will let the robot do lane following, object following, object identification, etc.                                                          |
 |--------------------------------------------|--------------------------------------------------------------------------------------------------------|--------|--------|---|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

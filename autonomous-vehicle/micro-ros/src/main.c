@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <mqtt_client.h> //temporary, for easy testing 
+
 #include "sdkconfig.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
@@ -22,8 +24,9 @@
 #define BDC_MCPWM_GPIO_D              26
 
 
-static const char *TAG = "example";   //for prints
+static const char *TAG = "example"; //for cleaner debugging prints
 
+/* set a custom speed */
 void explorer_set_speed(bdc_motor_handle_t left_motor, bdc_motor_handle_t right_motor, uint16_t speed)
 {
     ESP_LOGI(TAG, "Setting speed...");
@@ -31,6 +34,7 @@ void explorer_set_speed(bdc_motor_handle_t left_motor, bdc_motor_handle_t right_
     bdc_motor_set_speed(left_motor, (uint32_t)speed);
 }
 
+/* run the left motors */
 void explorer_set_left(bdc_motor_handle_t left_motor, bdc_motor_handle_t right_motor)
 {
     ESP_LOGI(TAG, "Forward: right - Reverse: left");
@@ -38,6 +42,7 @@ void explorer_set_left(bdc_motor_handle_t left_motor, bdc_motor_handle_t right_m
     ESP_ERROR_CHECK(bdc_motor_reverse(left_motor));
 }
 
+/* run the right motors */
 void explorer_set_right(bdc_motor_handle_t left_motor, bdc_motor_handle_t right_motor)
 {
     ESP_LOGI(TAG, "Forward: left - Reverse: right");
@@ -45,6 +50,7 @@ void explorer_set_right(bdc_motor_handle_t left_motor, bdc_motor_handle_t right_
     ESP_ERROR_CHECK(bdc_motor_reverse(right_motor));
 }
 
+/* run motors in counterclockwise */
 void explorer_set_reverse(bdc_motor_handle_t left_motor, bdc_motor_handle_t right_motor)
 {
     ESP_LOGI(TAG, "Forward: none - Reverse: left, right");
@@ -52,6 +58,7 @@ void explorer_set_reverse(bdc_motor_handle_t left_motor, bdc_motor_handle_t righ
     ESP_ERROR_CHECK(bdc_motor_reverse(right_motor));
 }
 
+/* run the motors clockwise */
 void explorer_set_forward(bdc_motor_handle_t left_motor, bdc_motor_handle_t right_motor)
 {
     ESP_LOGI(TAG, "Forward: left, right - Reverse: none");
@@ -59,10 +66,12 @@ void explorer_set_forward(bdc_motor_handle_t left_motor, bdc_motor_handle_t righ
     ESP_ERROR_CHECK(bdc_motor_forward(right_motor));
 }
 
+/* go for a certain amount of time */
 void explorer_drive_ms(bdc_motor_handle_t left_motor, bdc_motor_handle_t right_motor, uint32_t time){
     vTaskDelay(pdMS_TO_TICKS(time));
 }
 
+/* PWM control task */
 static void mcpwm_bdc(void *arg){
     /* DC motor config */
     bdc_motor_mcpwm_config_t mcpwm_config = {
@@ -97,7 +106,9 @@ static void mcpwm_bdc(void *arg){
     ESP_ERROR_CHECK(bdc_motor_enable(left_motor));
 
     while (1) {
+        /* if it looks like it isn't moving, set speed higher. It's a PWM thing */
         uint16_t speed = BDC_MIN_SPEED;
+
         uint32_t drive_time_ms = 500;
 
         explorer_set_speed(left_motor, right_motor, speed);
@@ -106,6 +117,7 @@ static void mcpwm_bdc(void *arg){
     }
 }
 
+/* run tasks in here - avoid writing other things here! */
 void app_main(void)
 {
     ESP_LOGI(TAG, "Running task...");
