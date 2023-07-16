@@ -8,6 +8,8 @@
     * https://www.youtube.com/watch?v=aaVWl64vYxQ
     * https://www.frontiersin.org/articles/10.3389/frobt.2021.618268/full
     * http://asrl.utias.utoronto.ca/datasets/mrclam/index.html
+* MQTT API
+    * https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/protocols/mqtt.html
 
 # In Progress
 ## Hardware
